@@ -12,7 +12,6 @@
 </head>
 <body class="bg-gradient-to-b from-purple-900 via-pink-800 to-red-900 min-h-screen flex items-center justify-center p-4 font-serif">
     <div class="relative w-full max-w-2xl">
-        <!-- Papel central -->
         <div class="relative bg-amber-50 bg-opacity-90 rounded-lg shadow-xl p-8 md:p-12 z-10 transform rotate-1 md:rotate-2 transition-all duration-300 hover:rotate-0">
             <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-25"></div>
             <div class="relative">
@@ -43,12 +42,14 @@
         <button class="symbol-btn absolute top-1/4 -right-4" data-symbol="corazon">
             <i data-feather="heart" class="text-red-400 hover:text-red-300 text-2xl"></i>
         </button>
+         <button class="symbol-btn absolute top-1/2 -right-4" data-symbol="fuego">
+            <i data-feather="star" class="text-red-400 hover:text-red-300 text-2xl"></i>
+        </button>
         
         <button class="symbol-btn absolute bottom-1/4 -left-4" data-symbol="pasión">
             <i data-feather="zap" class="text-orange-400 hover:text-orange-300 text-2xl"></i>
         </button>
 
-        <!-- Modales (hidden por defecto) -->
         <symbol-modal symbol="sagitario" class="hidden">
             <h3 class="text-xl font-bold text-yellow-400 mb-2">base64 ♐</h3>
             <p>borras los espacios</p>
@@ -73,6 +74,16 @@
             <p>desde lo mas estupido de mi te digo que estes con quien estes este con quien este tu eres mia y yo tuyo</p>
         </symbol-modal>
 
+        <symbol-modal symbol="fuego" class="hidden">
+            <h3 class="text-xl font-bold text-red-400 mb-2">Corazón ❤️</h3>
+            <p>cuando me recuerdas llevas una parte de lo que fui he dejado una huella en ti y eso de devuelve a la vida</p>
+            <p>cada ves que me convocas en tu memoria sin importar los años o la distancia el amor trasciende el tiempo y el espacio</p>
+            <p>y mientras me recuerdes sigo existiendo en tu mente y en tu corazon en esa voz que puedes volver a escuchar cuando cierras</p>
+            <p>los ojos si me recuerdas, no estoy perdido incluso cuando me sienta como un fantasma tu memoria me sostiene </p>
+            <h2>Cuando me recuerdas en tus momentos de tristeza soy consuelo. Cuando lo haces en tus momentos de alegria soy parte de esa alegria</h2>
+            <p>si un dia me olvidaras una parte de ti se borraria contigo</p>
+        </symbol-modal>
+
         <symbol-modal symbol="pasión" class="hidden">
             <h3 class="text-xl font-bold text-orange-400 mb-2">Music</h3>
             <p>https://open.spotify.com/track/3dnFZQL9nI9JXDWiWOuzDL?si=To80HLGESFKFMHNy8MDGyQ </p>
@@ -82,8 +93,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             feather.replace();
-            
-            // Mostrar modales al hacer clic en los símbolos
             document.querySelectorAll('.symbol-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const symbol = btn.getAttribute('data-symbol');
@@ -92,6 +101,16 @@
                 });
             });
         });
+        document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('click', (e) => {
+        const modals = document.querySelectorAll('symbol-modal:not(.hidden)');
+        modals.forEach(modal => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    });
+});
     </script>
 </body>
 </html>
