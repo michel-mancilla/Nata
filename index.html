@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Natalia, de Darío</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/symbol-modal.js"></script>
+</head>
+<body class="bg-gradient-to-b from-purple-900 via-pink-800 to-red-900 min-h-screen flex items-center justify-center p-4 font-serif">
+    <div class="relative w-full max-w-2xl">
+        <!-- Papel central -->
+        <div class="relative bg-amber-50 bg-opacity-90 rounded-lg shadow-xl p-8 md:p-12 z-10 transform rotate-1 md:rotate-2 transition-all duration-300 hover:rotate-0">
+            <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-25"></div>
+            <div class="relative">
+                <h1 class="text-3xl font-bold text-center mb-8 text-pink-700">Para Natalia</h1>
+                
+                <div class="text-lg text-gray-800 space-y-4">
+                    <p>Nat,</p>
+                    <p>Hay tantas cosas que quisiera decirte que no cabrían en mil cartas como esta. Pero siendo sincero esto lo hago para que no muera ya que cartas a mano que se perderan o quemaran y capaz esto igual lo olvides</p>
+                    <p>Eras, Eres y creo que seras esa luz que iluminan mis noches de soledad de tristeza que sabes como son, como el fuego que calienta mi alma fría. En ti encuentro esa pasión que pensé perdida, esa conexión que trasciende lo físico.</p>
+                    <p>Cuando nuestros caminos se cruzaron, pense que era todo lo que necesita pero me webie me webeo y se que estoy mal demasiado mal sobre que como estamos y como te trato como hago mis cagadas lo siento soy demasiado tonto.</p>
+                    <p>ahora bien solo te quiero decir que estare ahi mas ya no quiiero estra estorbando a que busques algo o no se me cago enserio hacer estito esta mas jodido de lo que crees peroo TE AMO TE AME TE AMARE este con quien este este lejos o cerca se que estoy mal demasiado mal respecto a eso pero equis.</p>
+                    <p>te quiero ver truinfar de una manera que no tienes idea, pequenia jajaja se que no lo eres pero para mi si</p>
+                    <p class="text-right italic">prohibido olvidar</p>
+                    <p class="text-right font-bold text-pink-700">01000100 01001101 01010011 01000100</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Símbolos alrededor -->
+        <button class="symbol-btn absolute -top-4 -left-4" data-symbol="sagitario">
+            <i data-feather="arrow-up-right" class="text-yellow-400 hover:text-yellow-300 text-2xl"></i>
+        </button>
+        
+        <button class="symbol-btn absolute -bottom-4 -right-4" data-symbol="virgo">
+            <i data-feather="star" class="text-green-400 hover:text-green-300 text-2xl"></i>
+        </button>
+        
+        <button class="symbol-btn absolute top-1/4 -right-4" data-symbol="corazon">
+            <i data-feather="heart" class="text-red-400 hover:text-red-300 text-2xl"></i>
+        </button>
+        
+        <button class="symbol-btn absolute bottom-1/4 -left-4" data-symbol="pasión">
+            <i data-feather="zap" class="text-orange-400 hover:text-orange-300 text-2xl"></i>
+        </button>
+
+        <!-- Modales (hidden por defecto) -->
+        <symbol-modal symbol="sagitario" class="hidden">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">base64 ♐</h3>
+            <p>borras los espacios</p>
+            <p>ZXMgcXVlIGF1bnF1ZSBubyBtZSBjcmVhcyB0aWVuZXMgdW4gY3VlcnBvIGdsb3Jpb3NvIH</p>
+            <p>F1ZSBzb2xvIGxvIHF1aWVybyBoYWNlciBtaW8gbWlvIHkgZGUgbmFkaWUgbWFzIGNvZ2Vy</p>
+            <p>dGUgZGUgdG9kYXMgbGFzIG1hbmVyYXMgcG9zaWJsZXMgaGFjZXJ0ZSAyIGhpam9zLCByZX</p>
+            <p>ZlbnRhcnRlIGVzZSBoZXJtb3NvIHRyYXNlcm8gbGFtZXJ0ZSBjb21wbGV0YSBsbGVuYXJl</p>
+            <p>dGUgZGUgbWkgaGFjZXIgcXVlIGVuIHR1IG1lbnRlIHNvbG8gc2VhIHlvIHlvIHkgbWkgcGVuZQ==</p>
+        </symbol-modal>
+
+        <symbol-modal symbol="virgo" class="hidden">
+            <h3 class="text-xl font-bold text-green-400 mb-2">Dream ♍</h3>
+            <p>La verdad esperoq ue un dia estemos en lo alto con buena fortuna y reencontrarnos saber el uno del otro.</p>
+            <p>recurdo que duele y mucho es a ti y mi wawa jade durmiendo en la cama durmiedno y yo solo trabajando</p>
+            <p>cuadno solo me iba a echar a tu lado estar tranquilo besarte y acariciarte el pelo</p>
+        </symbol-modal>
+
+        <symbol-modal symbol="corazon" class="hidden">
+            <h3 class="text-xl font-bold text-red-400 mb-2">Corazón ❤️</h3>
+            <p>pero el que se te forma al inclinarte digo... jajaj siempre me reire de los chistes que hagas de las cosas</p>
+            <p>que haces para animar pero la verdad es muy jodido pensar en que alguien mas tendra esa super suerte</p>
+            <p>desde lo mas estupido de mi te digo que estes con quien estes este con quien este tu eres mia y yo tuyo</p>
+        </symbol-modal>
+
+        <symbol-modal symbol="pasión" class="hidden">
+            <h3 class="text-xl font-bold text-orange-400 mb-2">Music</h3>
+            <p>https://open.spotify.com/track/3dnFZQL9nI9JXDWiWOuzDL?si=To80HLGESFKFMHNy8MDGyQ </p>
+        </symbol-modal>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            feather.replace();
+            
+            // Mostrar modales al hacer clic en los símbolos
+            document.querySelectorAll('.symbol-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const symbol = btn.getAttribute('data-symbol');
+                    const modal = document.querySelector(`symbol-modal[symbol="${symbol}"]`);
+                    modal.classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
